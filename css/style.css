@@ -1,0 +1,14 @@
+.col-3{
+    background-color: #1F2732;
+    height: 100vh;
+    width: 350px;
+
+}
+.col-3 ul{
+    width: 25%;
+    color: #4DF0DA;
+    font-size: 30px;
+    padding: 50px;
+    position: absolute;
+    top: 20%;
+}
