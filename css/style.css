@@ -1,6 +1,25 @@
+@font-face{
+	src: url(../fonts/MATURASC.TTF);
+	font-family: matura;
+}
+
 body {
   font-family: "Lato", sans-serif;
   transition: background-color .5s;
+}
+
+.col-3 h1{
+  font-family: matura;
+  color:#4DF0DA;
+  font-size: 55px;
+  padding-top: 40px;
+  padding-left: 30px;
+}
+
+.contentLogo{
+  display: flex;
+  padding: 40px;
+  flex-direction: row;
 }
 
 .sidenav {
@@ -85,4 +104,10 @@ padding: 15px;
         display: none;
     }
  
+}
+@media only screen and (max-width: 1300px) {
+  .contentLogo{
+    flex-direction: column;
   }
+
+}
