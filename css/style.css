@@ -126,3 +126,39 @@ padding: 15px;
   }
 
 }
+.img{
+  width: 700px;
+}
+.imgcerc{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+@media screen and (min-width: 1300px) and (max-width: 1400px) {
+.img {
+  width: 550px;
+}
+.articolContinut{
+  margin-top: 25px; 
+  margin-left: 200px;
+  padding: 10px;
+  width: 320px; height: 200px; 
+
+}
+.articolContinut h1{
+  font-size: 30px;
+}
+.articolContinut p{
+  font-size: 15px;
+}
+.imgcerc{
+  width: 160px;
+  height: 160px;
+}
+.col-3 h1{
+font-size: 45px;
+}
+.col-3 ul{
+  font-size: 25px;
+  }
+}
