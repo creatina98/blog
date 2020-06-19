@@ -69,7 +69,8 @@ body {
 }
 @media screen and (max-width: 961px) {
   #main{
-    padding: 16px;
+    left: 0;
+    margin-left: 0px;
   }
 }
 
@@ -113,19 +114,28 @@ padding: 15px;
   margin-left: 250px;
   padding: 15px;
 }
+
 .articolContinut h1{
   color: white;
 }
 .articolContinut p{
   color: white;
   font-size: 20px;
-}
+  margin-bottom: 40px;
 
+}
+.articolContinut .more{
+  color :#4DF0DA;
+  font-style: italic;
+  float: right;
+}
 @media only screen and (min-width: 960px) {
     .sidenavbar{
         display: none;
     }
- 
+    #breton{
+      display: none;
+    }
 }
 @media only screen and (max-width: 1300px) {
   .contentLogo{
@@ -140,6 +150,27 @@ padding: 15px;
   width: 200px;
   height: 200px;
   border-radius: 50%;
+}
+@media only screen and (min-width: 1650px) {
+  
+  .col-3 ul{
+    font-size: 35px;
+  }
+  .articolContinut{
+    margin-left: 330px;
+  }
+  .contentLogo img{
+      width: 150px;
+      height: 150px;
+  }
+  
+  .col-3 h1{
+    font-size: 70px;
+  }
+  
+  .img{
+    width: 800px;
+  }
 }
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
 .img {
@@ -168,6 +199,8 @@ font-size: 45px;
 .col-3 ul{
   font-size: 25px;
   }
+
+
 }
 
 @media only screen and (max-width: 1200px) {
@@ -177,6 +210,8 @@ font-size: 45px;
 
 }
 @media only screen and (max-width: 900px) {
+
+
   .img{
    
     width: 500px;
@@ -191,7 +226,9 @@ font-size: 45px;
     font-size: 25px;
   }
   .articolContinut p{
-    font-size: 18px;
+    font-size: 17px;
+    margin-bottom: 9px;
+
   }
 
 }
@@ -220,10 +257,12 @@ font-size: 45px;
     font-size: 20px;
   }
   .articolContinut p{
-    font-size: 15px;
+    font-size: 14px;
+    margin-bottom: 14px;
+
   }
   .col-8{
-    padding: 20px 50px;
+    padding: 20px 70px;
   }
 
 }
@@ -236,6 +275,9 @@ font-size: 45px;
    .articolContinut{
     width: 220px; height: 150px;
     margin-left: 100px;
+  }
+  .articolContinut p{
+    font-size: 12px;
   }
 }
 @media only screen and (max-width: 450px) {
@@ -250,28 +292,28 @@ font-size: 45px;
     padding: 10px;
   }
   .articolContinut p{
-    font-size: 15px;
+    font-size: 12px;
   }
 
 }
-@media only screen and (min-width: 1650px) {
-  
-  .col-3 ul{
-    font-size: 35px;
-  }
-  .articolContinut{
-    margin-left: 330px;
-  }
-  .contentLogo img{
-      width: 150px;
-      height: 150px;
-  }
-  
-  .col-3 h1{
-    font-size: 70px;
-  }
-  
-  .img{
-    width: 800px;
-  }
+.breton{
+  padding-left: 7px;
+  display: flex;
+  width: 100%;
+  background-color:#4DF0DA;
 }
+
+
+.breton h1 {
+  font-size: 30px;
+  margin: auto;
+  color:#1F2732 ;
+  margin-top: 5px;
+}
+@media only screen and (max-width: 400px) {
+  .col-8{
+    padding: 20px 55px;
+  }
+
+}
+  

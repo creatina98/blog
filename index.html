@@ -31,13 +31,17 @@
             </ul>  
         </div>
         <div class="columns col-9 col-lg-12" id="main">
-            <span id="iconita" style="font-size:30px; cursor:pointer" onclick="openNav()">&#9776;</span>
+                <div class="breton"  id="breton">
+                    <span id="iconita" style="font-size:30px; cursor:pointer; margin-top: 1px;" onclick="openNav()">&#9776;</span>
+                    <h1>"Noutati"</h1>
+                </div>
             <div class="columns col-12">
                 <div class="columns col-8 col-lg-12">
                     <img class="img" src="./img/creativity.jpg">
                     <div class="articolContinut p-absolute">
                         <h1>Creativitate</h1>
                         <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical</p>
+                        <p class="more"><a href="#">Citeste mai mult ...</a></p>
                     </div>
                 </div>
                 <div id="cercAutor" class="columns col-4" style="padding: 50px;">
@@ -50,6 +54,7 @@
                     <div class="articolContinut p-absolute">
                         <h1>Creativitate</h1>
                         <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical</p>
+                        <p class="more"><a href="#">Citeste mai mult ...</a></p>
                     </div>
                 </div>
                 <div id="cercAutor"  class="columns col-4" style="padding: 50px;">
@@ -61,19 +66,6 @@
 
     </div>
 
-    <script>
-    function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-    }
-
-    function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-    document.body.style.backgroundColor = "white";
-    }
-    </script>
-   
+<script src="./js/sidebar.js"></script>
 </body>
 </html> 
