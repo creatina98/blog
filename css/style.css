@@ -2,7 +2,10 @@
 	src: url(../fonts/MATURASC.TTF);
 	font-family: matura;
 }
-
+*{
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: "Lato", sans-serif;
   transition: background-color .5s;
@@ -94,6 +97,10 @@ body {
   padding: 50px;
  
 }
+.col-8{
+  margin: auto;
+  padding: 50px 100px;
+}
 .logo{
 
 padding: 15px;
@@ -134,7 +141,7 @@ padding: 15px;
   height: 200px;
   border-radius: 50%;
 }
-@media screen and (min-width: 1300px) and (max-width: 1400px) {
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
 .img {
   width: 550px;
 }
@@ -160,5 +167,111 @@ font-size: 45px;
 }
 .col-3 ul{
   font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #cercAutor{
+    display: none
+  }
+
+}
+@media only screen and (max-width: 900px) {
+  .img{
+   
+    width: 500px;
+  }
+  .articolContinut{
+    width: 250px; height: 200px;
+    margin-top: 40px; 
+    margin-left: 200px;
+  }
+
+  .articolContinut h1{
+    font-size: 25px;
+  }
+  .articolContinut p{
+    font-size: 18px;
+  }
+
+}
+
+@media only screen and (max-width: 650px) {
+  .col-8{
+    margin: auto;
+    padding: 20px 50px;
+  }
+
+}
+
+
+  @media only screen and (max-width: 600px) {
+  
+  .img{
+    width: 400px;
+  }
+   .articolContinut{
+    width: 200px; height: 180px;
+    margin-top: 30px; 
+    margin-left: 150px;
+  }
+
+  .articolContinut h1{
+    font-size: 20px;
+  }
+  .articolContinut p{
+    font-size: 15px;
+  }
+  .col-8{
+    padding: 20px 50px;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+  
+  .img{
+    width: 350px;
+  }
+   .articolContinut{
+    width: 220px; height: 150px;
+    margin-left: 100px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  
+  .img{
+    width: 300px;
+  }
+   .articolContinut{
+    margin-top: 20px; 
+    width: 220px; height: 130px;
+    margin-left: 60px;
+    padding: 10px;
+  }
+  .articolContinut p{
+    font-size: 15px;
+  }
+
+}
+@media only screen and (min-width: 1650px) {
+  
+  .col-3 ul{
+    font-size: 35px;
+  }
+  .articolContinut{
+    margin-left: 330px;
+  }
+  .contentLogo img{
+      width: 150px;
+      height: 150px;
+  }
+  
+  .col-3 h1{
+    font-size: 70px;
+  }
+  
+  .img{
+    width: 800px;
   }
 }
