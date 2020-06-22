@@ -129,6 +129,11 @@ padding: 15px;
   font-style: italic;
   float: right;
 }
+.autorDescriere{
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 15px;
+}
 @media only screen and (min-width: 960px) {
     .sidenavbar{
         display: none;
@@ -147,11 +152,12 @@ padding: 15px;
   width: 700px;
 }
 .imgcerc{
-  width: 200px;
-  height: 200px;
+  width: 190px;
+  height: 190px;
   border-radius: 50%;
+  margin: auto;
 }
-@media only screen and (min-width: 1650px) {
+@media only screen and (min-width: 1651px) {
   
   .col-3 ul{
     font-size: 35px;
