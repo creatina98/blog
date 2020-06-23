@@ -1,5 +1,8 @@
 /*************************************** INCEPUT NAVBAR *****************************************/
-
+@font-face{
+	src: url(../fonts/Poppins-Regular.otf);
+	font-family: poppins-regular;
+}
 @font-face{
 	src: url(../fonts/MATURASC.TTF);
 	font-family: matura;
@@ -163,10 +166,104 @@ font-size: 45px;
   margin-top: 5px;
 }
 /*************************************** SFARSIT NAVBAR *****************************************/
-.col-4 p{
+.backgroundSquare{
+  display: flex;
+}
+.gridContinutAutori{
+  position: absolute;
+}
+
+.pinkSquare{
+  margin-left: 100px;
+  height: 500px;
+  width: 250px;
+  background-color: #FBD7D7;
+}
+
+.purpleSquare{
+  margin-top: 500px;
+  height: 60px;
+  width: 400px;
+  background-color: #D7D7FB;
+}
+
+.greenSquare{
+  margin-top: 285px;
+  height: 215px;
+  width: 500px;
+  background-color: #D7FBF6;
+}
+
+.yellowSquare{
+  margin: 0 auto;
+  margin-top: 180px;
+  height: 200px;
+  width: 700px;
+  background-color: #FEF2C5;
+}
+.containerAutor1{
+  padding: 150px 150px 0;
+  display: flex;
+}
+.containerAutor1 p{
+  text-align: center;
+  padding: 50px;
+  font-size: 25px;
+  margin-left: 200px;
+  font-family: poppins-regular;
+}
+.continutNume{
+  position: absolute;
+}
+
+.continutNume p{
+  color: #1F2732;
+  font-family: poppins-regular;
+  font-size: 45px;
+}
+
+
+@media only screen and (max-width: 1600px) {
+  .containerAutor1{
+    flex-direction: column;
+  }
+  .containerAutor1 p{
+    margin-left: 0;
+  }
+  #numeContainer{
+    margin-left: 200px;
+  }
+  .containerAutor1{
+    padding: 150px 80px 0;
+  }
+}
+
+
+@media only screen and (max-width: 700px) {
+  .continutNume{
+  }
+  .containerAutor1{
+    padding: 150px 0 0;
+  }
+  .imagineContainer, .continutNume{
+    margin-left: 200px;
+  }
+  .imagineContainer, .continutNume{
     margin: 0 auto;
+  }
+
+  .continutNume{
+    margin-left: 100px;
+  }
+  .backgroundSquare{
+    display: none;
+  }
+
+  .yellowSquare{
+    width: 200px;
+    background-color: white;
+  }
 }
-.imgautor{
-    width: 100%;
-    padding: 30px;
-}
+
+
+
