@@ -121,6 +121,7 @@ padding: 15px;
     flex-direction: column;
   }
 
+  
 }
 
 @media only screen and (min-width: 1651px) {
@@ -137,7 +138,15 @@ padding: 15px;
   .col-3 h1{
     font-size: 70px;
   }
-  
+  .col-8 p{
+    font-size: 20px;
+  }
+  .col-8 h1{
+    font-size: 50px;
+  }
+  .colst p{
+    font-size: 18px;
+  }
  
 }
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
@@ -203,4 +212,12 @@ font-size: 45px;
   text-align: center;
   font-weight: 400;
   border-bottom:3px solid #4DF0DA;
+}
+
+
+@media only screen and (max-width: 840px) {
+  .col-8 {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
