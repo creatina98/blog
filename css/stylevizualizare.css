@@ -221,3 +221,102 @@ font-size: 45px;
     padding-right: 50px;
   }
 }
+
+
+.boxContinutComentarii{
+  width: 100%;
+  padding: 50px 0px;
+}
+
+.boxContinutComentarii hr{
+  margin-bottom: 50px;
+}
+
+.listaComentarii{
+  padding: 40px;
+}
+
+.boxImgScrisAutor{
+  display: flex;
+  padding-bottom: 15px;
+}
+
+.boxImgScrisAutor img{
+  margin-right: 20px;
+}
+
+.boxAperciereArticol{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.boxAperciereArticol h1{
+  font-size: 40px;
+  font-weight: 500;
+}
+.boxAperciereArticol button{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border-radius: none;
+  color: white;
+  background-color:#4DF0DA ;
+  border: none;
+  padding-top: 7px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.inputAddComentarii h2{
+  font-weight: 500;
+  padding-bottom: 12px;
+}
+
+.inputAddComentarii textarea{
+  width: 100%;
+  height: 130px;
+  font-size: 18px;
+  font-weight: 600;
+  /* background-color: #FAFAFA; */
+  padding: 10px;
+}
+
+.inputAddComentarii input{
+  padding: 5px;
+}
+
+
+.inputBoxComentariu{
+  display: flex;
+}
+.inputBoxComentariu input{
+  width: 100%;
+  margin-top: 5px;
+  /* background-color: #FAFAFA; */
+  border: 1px solid #767676;
+}
+
+.inputAddComentarii button{
+  background-color: #1F2732;
+  color: white;
+  font-size: 20px;
+  padding: 5px 15px;
+  border: none;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+@keyframes pulse {
+  from { transform: scale(1); }
+  50% { transform: scale(0.85); }
+  to { transform: scale(1); }
+}
+
+.fe-pulse-w-pause {
+  animation-name: pulse;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite;
+}
+.fe-pulse-w-pause:hover,
+.fe-pulse-w-pause:focus {
+  animation-name: unset;
+}
