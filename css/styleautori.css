@@ -175,9 +175,10 @@ font-size: 45px;
 
 .pinkSquare{
   margin-left: 100px;
-  height: 500px;
+  height: 450px;
   width: 250px;
   background-color: #FBD7D7;
+  margin-top: 50px;
 }
 
 .purpleSquare{
