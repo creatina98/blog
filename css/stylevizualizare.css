@@ -248,7 +248,7 @@ font-size: 45px;
 .boxAperciereArticol{
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .boxAperciereArticol h1{
   font-size: 40px;
@@ -303,6 +303,12 @@ font-size: 45px;
   border: none;
   margin-top: 30px;
   cursor: pointer;
+}
+.inputAddComentarii button:hover{
+  box-shadow: inset 0 0 0 2px #4DF0DA;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 @keyframes pulse {
