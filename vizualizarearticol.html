@@ -85,9 +85,10 @@
                     <form accept="" method="POST">
                         <textarea placeholder="Comentariu*"></textarea>
                         <div class="inputBoxComentariu">
-                        <input type='radio' name='XIAlmnus' value='Yes' id="XIyes" style="width: 50px;"/> Nume si prenume&nbsp&nbsp&nbsp&nbsp
-                        <input type="textbox" name="XIyop" id="XIyop" value="Anonim*"/>&nbsp&nbsp
-                        <input type="text" placeholder="Email">
+                            <input type='checkbox' name='XIAlmnus' value='Yes' id="XIyes" style="width: 50px; margin-top: 15px;"/>
+                            <label for="XIyes" style=""> Nume si prenume</label>
+                            <input type="textbox" name="XIyop" id="XIyop" value="Anonim*"/>&nbsp&nbsp
+                            <input type="text" placeholder="Email">
                         </div>
                         <button>Adauga comentariu</button>
                     </form>
@@ -147,6 +148,14 @@ $( "#likeButton" ).click(function() {
   $( this ).css( "color", "#4DF0DA" );
   $( this ).css( "background-color", "white" );
   $("i").removeClass("fe-pulse-w-pause");
+});
+</script>
+<script>
+$(document).ready(function(){
+
+  $('.col-8').css('display', 'none');
+  $('.col-8').fadeIn(500);
+
 });
 </script>
 </body>

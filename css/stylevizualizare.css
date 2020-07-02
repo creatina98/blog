@@ -326,3 +326,13 @@ font-size: 45px;
 .fe-pulse-w-pause:focus {
   animation-name: unset;
 }
+.inputBoxComentariu label{
+  width: 360px; margin-top: 10px;
+}
+@media only screen and (max-width: 1280px) {
+  .inputBoxComentariu label{
+    margin-top: 0;
+    width: 70px;
+    padding-right: 10px;
+  }
+}
