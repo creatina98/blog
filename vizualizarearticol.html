@@ -129,34 +129,9 @@
   
 <script src="./js/sidebar.js"></script>
 <script src="./js/jquery-3.5.1.js"></script>
-<script>
-    $(function() {
-    window.invalidate_input = function() {
-        if ($('input[name=XIAlmnus]:checked').val() == "Yes")
-            $('#XIyop').removeAttr('disabled');
-        else
-            $('#XIyop').attr('disabled', 'disabled');
-    };
-    
-    $("input[name=XIAlmnus]").change(invalidate_input);
-    
-    invalidate_input();
-});
-</script>
-<script>
-$( "#likeButton" ).click(function() {
-  $( this ).css( "color", "#4DF0DA" );
-  $( this ).css( "background-color", "white" );
-  $("i").removeClass("fe-pulse-w-pause");
-});
-</script>
-<script>
-$(document).ready(function(){
+<script src="./js/checkboxComentariu.js"></script>
+<script src="./js/animationClickLikeButton.js"></script>
+<script src="./js/fade-inVizualizareArticol.js"></script>
 
-  $('.col-8').css('display', 'none');
-  $('.col-8').fadeIn(500);
-
-});
-</script>
 </body>
 </html> 
