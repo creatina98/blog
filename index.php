@@ -9,7 +9,7 @@
     </head>
 <body>
 
-        <?php require "include/navbar.inc.php" ?>
+        <?php require "./navbar.inc.php" ?>
         
         <div class="columns col-9 col-lg-12" id="main">
                 <div class="breton"  id="breton">

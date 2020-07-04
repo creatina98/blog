@@ -5,12 +5,11 @@
     <link rel="stylesheet" type="text/css" href="./css/stylearticole.css">
     <link rel="stylesheet" href="./dist/spectre.css">
     <link rel="stylesheet" href="./dist/spectre-icons.css">
-    <script src="/js/jquery-3.5.1.js"></script>
     <title>M&E | Blog</title>
     </head>
 <body>
 
-    <?php require "include/navbar.inc.php" ?>
+    <?php require "./navbar.inc.php" ?>
 
         <div class="columns col-9 col-lg-12" id="main">
             <div class="breton"  id="breton">
@@ -95,7 +94,8 @@
             </div>
         </div>
     </div>
-<script>
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script>
 
     $(".box").mouseenter(function(){
     $(".texthover").fadeIn();
