@@ -15,9 +15,9 @@
             </div>
             <ul class="navdesk"> 
                 <a href="index.php"><li>Noutati</li></a>
-                <a href="articole.php"><li>Tech/IT</li></a>
-                <a href="articole.php"><li>Creativitate</li></a>
-                <a href="articole.php"><li>Psihologie</li></a>
+                <a href="articole.php?categorie=tech"><li>Tech/IT</li></a>
+                <a href="articole.php?categorie=creativitate"><li>Creativitate</li></a>
+                <a href="articole.php?categorie=psihologie"><li>Psihologie</li></a>
                 <a href="autori.php"><li>Autori</li></a>
             </ul>  
         </div>

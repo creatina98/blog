@@ -1,3 +1,5 @@
+<?php require "./include/selectCategorieArticole.inc.php"?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -16,6 +18,9 @@
                 <span id="iconita" style="font-size:30px; cursor:pointer; margin-top: 1px;" onclick="openNav()">&#9776;</span>
                 <h1>"Filozofie"</h1>
             </div>
+            <?php
+            foreach ($array as $item) {
+            ?>
             <div class="columns col-6 col-xl-12">
                 <div class="imgart">
                     <div class="box overlay black">
@@ -32,66 +37,10 @@
                     </div>
                 </div>
                 <div class="textart">
-                    <h4>Pasta termo-conductoare Noctua si proprietatile ei</h4>
+                    <h4><?php echo mb_strimwidth($item["titlul_articolului"],0,30,"..."); ?></h4>
                 </div>
             </div>
-            <div class="columns col-6 col-xl-12 ">
-                <div class="imgart">
-                    <div class="box overlay black">
-                        <img src="img/creativity2.jpg" width="100%" >
-                        <div class="texthover p-absolute">
-                        <p>10/12/2020</p>
-                        </div>
-                        <div class="texthover1 p-absolute">
-                        <p>By:Mihai Popa</p>
-                        </div>
-                        <div class="texthover2 p-absolute">
-                            <p>Si uite asa elvis manaca linistit in timp ce mihaita moare pe interior si altele</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="textart">
-                    <h4>Pasta termo-conductoare Noctua si proprietatile ei</h4>
-                </div>
-            </div>
-            <div class="columns col-6 col-xl-12">
-                <div class="imgart">
-                    <div class="box overlay black">
-                        <img src="img/creativity2.jpg" width="100%" >
-                        <div class="texthover p-absolute">
-                        <p>10/12/2020</p>
-                        </div>
-                        <div class="texthover1 p-absolute">
-                        <p>By:Mihai Popa</p>
-                        </div>
-                        <div class="texthover2 p-absolute">
-                            <p>Si uite asa elvis manaca linistit in timp ce mihaita moare pe interior si altele</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="textart">
-                    <h4>Pasta termo-conductoare Noctua si proprietatile ei</h4>
-                </div>
-            </div>
-            <div class="columns col-6 col-xl-12">
-                <div class="imgart">
-                    <div class="box overlay black">
-                        <img src="img/creativity2.jpg" width="100%" >
-                        <div class="texthover p-absolute">
-                        <p>10/12/2020</p>
-                        </div>
-                        <div class="texthover1 p-absolute">
-                        <p>By:Mihai Popa</p>
-                        </div>
-                        <div class="texthover2 p-absolute">
-                            <p>Si uite asa elvis manaca linistit in timp ce mihaita moare pe interior si altele</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="textart">
-                    <h4>Pasta termo-conductoare Noctua si proprietatile ei</h4>
-                </div>
-            </div>
+            <?php } ?>
         </div>
     </div>
     <script src="./js/jquery-3.5.1.js"></script>
