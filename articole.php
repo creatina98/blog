@@ -10,28 +10,8 @@
     </head>
 <body>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Noutati</a>
-        <a href="#">Tech/IT</a>
-        <a href="#">Creativitate</a>
-        <a href="#">Psihologie</a>
-        <a href="#">Autori</a>
-    </div>
-    <div class="columns col-gapless" >
-        <div class="column col-3 hide-lg">
-            <div class="contentLogo">
-                <img src="./img/logo.png" alt="Logo M&E" width="110px" height="110px">
-                <h1 class="logo text-center">#blog</h1>
-            </div>
-            <ul > 
-                <li>Noutati</li>
-                <li>Tech/IT</li>
-                <li>Creativitate</li>
-                <li>Psihologie</li>
-                <li>Autori</li>
-            </ul>  
-        </div>
+    <?php require "include/navbar.inc.php" ?>
+
         <div class="columns col-9 col-lg-12" id="main">
             <div class="breton"  id="breton">
                 <span id="iconita" style="font-size:30px; cursor:pointer; margin-top: 1px;" onclick="openNav()">&#9776;</span>

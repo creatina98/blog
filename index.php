@@ -9,28 +9,8 @@
     </head>
 <body>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html">Noutati</a>
-        <a href="articole.html">Tech/IT</a>
-        <a href="articole.html">Creativitate</a>
-        <a href="articole.html">Psihologie</a>
-        <a href="autori.html">Autori</a>
-    </div>
-    <div class="columns col-gapless" >
-        <div class="column col-3 hide-lg">
-            <div class="contentLogo">
-                <img src="./img/logo.png" alt="Logo M&E"  style="margin: 0 auto;" width="110px" height="110px">
-                <h1 class="logo text-center">#blog</h1>
-            </div>
-            <ul class="navdesk"> 
-                <a href="index.html"><li>Noutati</li></a>
-                <a href="articole.html"><li>Tech/IT</li></a>
-                <a href="articole.html"><li>Creativitate</li></a>
-                <a href="articole.html"><li>Psihologie</li></a>
-                <a href="autori.html"><li>Autori</li></a>
-            </ul>  
-        </div>
+        <?php require "include/navbar.inc.php" ?>
+        
         <div class="columns col-9 col-lg-12" id="main">
                 <div class="breton"  id="breton">
                     <span id="iconita" style="font-size:30px; cursor:pointer; margin-top: 1px;" onclick="openNav()">&#9776;</span>
@@ -69,8 +49,6 @@
                 </div>
             </div>
         </div>
-
-
     </div>
 
 <script src="./js/sidebar.js"></script>
