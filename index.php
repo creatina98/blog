@@ -4,7 +4,7 @@
 <html>
     <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="./dist/spectre.css">
     <link rel="stylesheet" href="./dist/spectre-icons.css">
     <title>M&E | Blog</title>
@@ -25,9 +25,11 @@
                 <div class="columns col-8 col-lg-12">
                     <img class="img" src="./img/creativity.jpg">
                     <div class="articolContinut p-absolute">
-                        <h1 style="font-size: 32px"><?php echo mb_strimwidth($item["titlul_articolului"],0,30,"..."); ?></h1>
+                        <h1><?php echo mb_strimwidth($item["titlul_articolului"],0,30,"..."); ?></h1>
                         <p><?php echo mb_strimwidth($item["continut_articol"],0,132,"...");?></p>
-                        <p class="more"><a href="#">Citeste mai mult</a></p>
+                        <form action="" method="POST">
+                        <p class="more"><a href="vizualizarearticol.php?id_art=<?php echo $item["id_articol"];?>">Citeste mai mult</a></p>
+                        </form>
                     </div>
                 </div>
                 <div id="cercAutor" class="columns col-4" style="padding: 50px;">
