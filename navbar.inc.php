@@ -2,9 +2,9 @@
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.php">Noutati</a>
-        <a href="articole.php">Tech/IT</a>
-        <a href="articole.php">Creativitate</a>
-        <a href="articole.php">Psihologie</a>
+        <a href="articole.php?categorie=tech">Tech/IT</a>
+        <a href="articole.php?categorie=creativitate">Creativitate</a>
+        <a href="articole.php?categorie=psihologie">Psihologie</a>
         <a href="autori.php">Autori</a>
     </div>
     <div class="columns col-gapless" >

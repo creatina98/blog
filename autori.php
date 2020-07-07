@@ -25,9 +25,7 @@
                                 <p id="numeContainer" style="padding-top: 0; font-size: 22px; text-align: left; font-weight:600; color: #4DF0DA;">EDITOR CHIEF</p>
                             </div>
                         <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            De profesie inginer al bunei dipozitii si promator al imbratisarilor fara motiv. El este cine sta in spatele articolelor referitoare la empatie,folozofie,concepte abstracte,creativitate si self improvment.De obicei este o persoana plina de energie pozitiva si mereu in cautare de noi prieteni, care adora sa observe lumea si sa analizeze totul dintr-un punct de vedere obiectiv.
                         </p>
                     </div>
                     <div class="containerAutor1" style="padding-top: 60px;">
@@ -37,9 +35,7 @@
                             <p id="numeContainer"  style="padding-top: 0; font-size: 22px; text-align: left; font-weight:600; color: #4DF0DA;">EDITOR CHIEF</p>
                         </div>
                         <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            De profesie hacker al sistemelor de la nasa si in timpul liber programator web fullstack. El sta in spatele articolelor legate de tutoriale despre tehnologiile web,.......fill in dupa.De obicei o persoana foarte amuzanta care prefera sa munceasca din greu inaite de a se relaxa si mereu doritor sa ajute incepatorii in ale web-ului,fitnesului, selfconfidense.
                         </p>
                     </div>
                     
