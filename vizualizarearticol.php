@@ -74,15 +74,25 @@
                <div class="colst" >
                     <div>
                         <h4 class="headrecent">Articole recente</h4>
-                        <p>Ce este lumea? Cum sa ne integram... Multa fericire si baniiiiii</p>
-                        <hr>
-                        <p>Ce este lumea? Cum sa ne integram... Multa fericire si baniiiiii</p>
-                        <hr>
-                        <p>Ce este lumea? Cum sa ne integram... Multa fericire si baniiiiii</p>
-                        <hr>
-                        <p>Ce este lumea? Cum sa ne integram... Multa fericire si baniiiiii</p>
-                        <hr>
-                        <p>Ce este lumea? Cum sa ne integram... Multa fericire si baniiiiii</p>
+                        <?php
+                        $array1 = array();
+                        $sql1 = "SELECT * FROM articol limit 5 ;";
+                        $result1 = mysqli_query($conn, $sql1);
+                        $resultCheck1 = mysqli_num_rows($result1);
+
+                        if ($resultCheck1 > 0) {
+                            while ($row1 = mysqli_fetch_assoc($result1)) {
+                                $array1[] = $row1;
+                            }
+                        } ?>
+                        <?php
+                        foreach ($array1 as $item1) {
+                        ?>
+                        <p><?php echo  $item1['titlul_articolului'];?></p>
+                          <hr>
+                        <?php } ?>
+
+
                     </div>
                     <div>
                         <h4 class="headalte">Alte sectiuni</h4>

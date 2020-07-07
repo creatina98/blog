@@ -13,4 +13,6 @@ if (isset($_GET['id_art'])) {
             $array[] = $row;
         }
     }
+
+
 }

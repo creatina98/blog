@@ -34,9 +34,7 @@
                 </div>
                 <div id="cercAutor" class="columns col-4" style="padding: 50px;">
                     <img  class="imgcerc " src="./img/creativity.jpg">
-                    <p class="autorDescriere">Mihai, inca un incepator in ale scrisului dar pasionat sa invete mai multe, mare adept al filozofiei
-                        si imbratisarilor fara motiv este si asa se duce la padure.
-                    </p>
+                    <p class="autorDescriere"><?php echo $item["descriere"];?></p>
                 </div>
             </div>
             <?php } ?>
