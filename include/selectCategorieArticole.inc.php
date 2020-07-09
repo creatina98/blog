@@ -4,7 +4,7 @@
 
     $categorie = $_GET['categorie'];
     $array = array();
-    $sql = "SELECT * FROM articol WHERE categorie ='$categorie'";
+    $sql = "SELECT * FROM articol,autor WHERE articol.id_autor=autor.id_autor and categorie ='$categorie'";
     $result = mysqli_query($conn, $sql);
     $resultCheck = mysqli_num_rows($result);
 

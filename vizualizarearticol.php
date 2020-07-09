@@ -24,10 +24,10 @@
            <div class="columns  col-8 col-md-12">
                <div class="titlulDataArticol">
                 <h1 style="font-family: 'Rockwell'; margin-bottom: 0;"><?php echo  $item['titlul_articolului'];?></h1>
-                <p>11 iun. 2020, 20:32</p>
+                <p><?php echo  $item['data_articol'];?> , <?php echo  $item['ora'];?></p>
                </div>
          
-            <img class="headimg" src="./img/creativity.jpg">
+            <img class="headimg" src="./img/<?php echo $item["poza_articol"];?>">
 
             <div><?php echo  $item['continut_articol'];?> </div>
 
@@ -43,18 +43,6 @@
                 </div>
                 <hr>
                 <h2 id="titluLista">Lista comentarii</h2>
-               <?php
-               $array2 = array();
-               $sql2 =  "SELECT * FROM comentariu,articol WHERE comentariu.id_articol=articol.id_articol and articol.id_articol=". $_GET['id_art'];
-               $result2 = mysqli_query($conn, $sql2);
-               $resultCheck2 = mysqli_num_rows($result2);
-
-               if ($resultCheck2 > 0) {
-                   while ($row2 = mysqli_fetch_assoc($result2)) {
-                       $array2[] = $row2;
-                   }
-               }else { ?> <style> #titluLista{display: none;} .listaComentarii{display: none}</style> <?php }
-               ?>
 
                 <div class="listaComentarii">
                     <?php
@@ -63,7 +51,7 @@
                     <div class="boxImgScrisAutor">
                         <img src="./img/icon9.png" alt="icon" width="55px" height="58px">
                         <div class="autorCometariu">
-                            <p style="margin-bottom: 0;">Anonim</p>
+                            <p style="margin-bottom: 0;"><?php echo  $item2['autor_comentariu'];?></p>
                             <p>11 iun. 2020, 20:32</p>
                         </div>
                    </div>
@@ -74,15 +62,16 @@
                 
                 <div class="inputAddComentarii">
                     <h2>Lasa un feedback</h2>
-                    <form accept="" method="POST">
-                        <textarea placeholder="Comentariu*"></textarea>
+                    <form novalidate="" action="include/insertComentariu.inc.php" method="POST">
+                        <textarea name="cometariu" placeholder="Comentariu*"></textarea>
                         <div class="inputBoxComentariu">
                             <input type='checkbox' name='XIAlmnus' value='Yes' id="XIyes" style="width: 50px; margin-top: 15px;"/>
                             <label for="XIyes" style=""> Nume si prenume</label>
                             <input type="textbox" name="XIyop" id="XIyop" value="Anonim*"/>&nbsp&nbsp
-                            <input type="text" placeholder="Email">
+                            <input type="text" name="email" placeholder="Email">
+                            <input  style="display: none" type="text" name="id_A" value="<?php echo  $item['id_articol'];?>">
                         </div>
-                        <button>Adauga comentariu</button>
+                        <button name="adaugaComentariu" type="submit">Adauga comentariu</button>
                     </form>
                 </div>
            </div>
@@ -93,42 +82,18 @@
                     <div>
                         <h4 class="headrecent">Articole recente</h4>
                         <?php
-                        $array1 = array();
-                        $sql1 = "SELECT * FROM articol limit 6 ;";
-                        $result1 = mysqli_query($conn, $sql1);
-                        $resultCheck1 = mysqli_num_rows($result1);
-
-                        if ($resultCheck1 > 0) {
-                            while ($row1 = mysqli_fetch_assoc($result1)) {
-                                $array1[] = $row1;
-                            }
-                        } ?>
-                        <?php
                         foreach ($array1 as $item1) {
                         ?>
                         <a style="text-decoration: none;color:#1F2732" href="vizualizarearticol.php?id_art=<?php echo $item1["id_articol"];?>"><p><?php echo  $item1['titlul_articolului'];?></p></a>
                             <hr>
                         <?php } ?>
-
-
                     </div>
                     <div>
                         <h4 class="headalte">Articol random</h4>
                         <?php
-                        $array2 = array();
-                        $sql2 = "SELECT * FROM articol  order by rand() limit 1 ;";
-                        $result2 = mysqli_query($conn, $sql2);
-                        $resultCheck2 = mysqli_num_rows($result2);
-
-                        if ($resultCheck2 > 0) {
-                            while ($row2 = mysqli_fetch_assoc($result2)) {
-                                $array2[] = $row2;
-                            }
-                        } ?>
-                        <?php
-                        foreach ($array2 as $item2) {
+                        foreach ($array3 as $item3) {
                             ?>
-                            <a style="text-decoration: none;color:#1F2732" href="vizualizarearticol.php?id_art=<?php echo $item2["id_articol"];?>"><p><?php echo  $item2['titlul_articolului'];?></p></a>
+                            <a style="text-decoration: none;color:#1F2732" href="vizualizarearticol.php?id_art=<?php echo $item3["id_articol"];?>"><p><?php echo  $item3['titlul_articolului'];?></p></a>
                             <hr>
                         <?php } ?>
                     </div>

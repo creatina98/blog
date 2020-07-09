@@ -24,12 +24,12 @@
             <div class="columns col-6 col-xl-12">
                 <div class="imgart"><a href="vizualizarearticol.php?id_art=<?php echo $item["id_articol"];?>">
                     <div class="box hover<?php echo  $item['id_articol'];?> overlay black">
-                        <img src="img/creativity2.jpg" width="100%" >
+                        <img src="./img/<?php echo $item["poza_articol"];?>" width="100%" >
                         <div class="texthover hover1<?php echo  $item['id_articol'];?> p-absolute">
-                        <p>10/12/2020</p>
+                        <p><?php echo  $item['data_articol'];?></p>
                         </div>
                         <div class="texthover1 hover2<?php echo  $item['id_articol'];?> p-absolute">
-                        <p>By:Mihai Popa</p>
+                        <p>By : <?php echo  $item['prenume'];?> <?php echo  $item['nume'];?></p>
                         </div>
                         <div class="texthover2 hover3<?php echo  $item['id_articol'];?> p-absolute">
                             <p><?php echo mb_strimwidth($item["continut_articol"],0,132,"...");?></p>

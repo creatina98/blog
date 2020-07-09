@@ -23,9 +23,9 @@
             ?>
             <div class="columns col-12">
                 <div class="columns col-8 col-lg-12">
-                    <img class="img" src="./img/creativity.jpg">
+                    <img class="img" src="./img/<?php echo $item["poza_articol"];?>">
                     <div class="articolContinut p-absolute">
-                        <h1><?php echo mb_strimwidth($item["titlul_articolului"],0,30,"..."); ?></h1>
+                        <h1><?php echo mb_strimwidth($item["titlul_articolului"],0,24,"..."); ?></h1>
                         <p><?php echo mb_strimwidth($item["continut_articol"],0,132,"...");?></p>
                         <form action="" method="POST">
                         <p class="more"><a href="vizualizarearticol.php?id_art=<?php echo $item["id_articol"];?>">Citeste mai mult</a></p>
@@ -33,7 +33,7 @@
                     </div>
                 </div>
                 <div id="cercAutor" class="columns col-4" style="padding: 50px;">
-                    <img  class="imgcerc " src="./img/creativity.jpg">
+                    <img  class="imgcerc " src="./img/<?php echo $item["poza_autor"];?>">
                     <p class="autorDescriere"><?php echo $item["descriere"];?></p>
                 </div>
             </div>
