@@ -26,7 +26,7 @@
                     <img class="img" src="./img/<?php echo $item["poza_articol"];?>">
                     <div class="articolContinut p-absolute">
                         <h1><?php echo mb_strimwidth($item["titlul_articolului"],0,24,"..."); ?></h1>
-                        <p><?php echo mb_strimwidth($item["continut_articol"],0,132,"...");?></p>
+                        <p><?php echo mb_strimwidth($item["continut_articol"],0,122,"...");?></p>
                         <form action="" method="POST">
                         <p class="more"><a href="vizualizarearticol.php?id_art=<?php echo $item["id_articol"];?>">Citeste mai mult</a></p>
                         </form>
