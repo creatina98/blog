@@ -28,7 +28,7 @@
                 <div class="boxContinutArticol">
                     <h1 style="font-family: Rockwell; font-weight: normal; padding-bottom: 10px"><?php echo mb_strimwidth($item["titlul_articolului"],0,30,"..."); ?></h1>
                     <p><?php echo mb_strimwidth($item["continut_articol"],0,132,"...");?></p>
-                        <button style="">Update</button>
+                        <a href="./vizualizareEditArticol.php?id_art=<?php echo $item["id_articol"];?>"><button style="cursor: pointer">Edit</button></a>
                 </div>
             </div>
         <?php

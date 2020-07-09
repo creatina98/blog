@@ -75,7 +75,37 @@ body {
 .boxContinutArticol button {
   margin-top: 20px;
   padding: 8px;
-  background-color: #28a745;
+  background-color: #17a2b8;
   color: white;
   border: none;
+}
+
+/* =============== style css pentru vizualizare edit articol */
+.editSection {
+  padding: 60px 100px 20px;
+  width: 70%;
+  text-align: center;
+}
+
+.editSection input {
+  font-size: 30px;
+  width: 50%;
+  margin: 10px;
+  text-align: center;
+}
+.editSection textarea {
+  width: 100%;
+  height: 700px;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.editSection button {
+  font-size: 18px;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: 1px solid #01a301;
+  margin-top: 20px;
 }
