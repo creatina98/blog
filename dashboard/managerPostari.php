@@ -1,3 +1,5 @@
+<?php require "../include/selectArticol.inc.php"?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,26 +13,28 @@
         <div class="navbar">
             <h1>Nume prenume editor</h1>
             <ul>
-                <li>Editor postari</li>
-                <li>Manager postari</li>
+                <li><a href="./admin.php" style="color: white; text-decoration: none">Editor postari</a></li>
+                <li><a href="./managerPostari.php" style="color: white; text-decoration: none">Manager postari</a></li>
             </ul>
             <div class="boxContinut">
                 <p>I'M A BLOGGER what's your superpower?</p>
             </div>
         </div>
         <div class="postari">
+            <?php
+            foreach ($array as $item) {
+            ?>
             <div class="boxArticol">
                 <div class="boxContinutArticol">
-                    <h3>Titlul articolului</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                      when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                       It has survived not only five centuries, but also the leap into electronic typesetting, remaining
-                        essentially unchanged.</p>
-                        <button>Update</button>
+                    <h1 style="font-family: Rockwell; font-weight: normal; padding-bottom: 10px"><?php echo mb_strimwidth($item["titlul_articolului"],0,30,"..."); ?></h1>
+                    <p><?php echo mb_strimwidth($item["continut_articol"],0,132,"...");?></p>
+                        <button style="">Update</button>
                 </div>
-            </div>            
-        </div>
+            </div>
+        <?php
+        }
+            ?>
+
     </div>
 </body>
 </html>

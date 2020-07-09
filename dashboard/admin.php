@@ -14,8 +14,8 @@
         <div class="navbar">
             <h1>Nume prenume editor</h1>
             <ul>
-                <li>Editor postari</li>
-                <li>Manager postari</li>
+                <li><a href="./admin.php" style="color: white; text-decoration: none">Editor postari</a></li>
+                <li><a href="./managerPostari.php" style="color: white; text-decoration: none">Manager postari</a></li>
             </ul>
             <div class="boxContinut">
                 <p>I'M A BLOGGER what's your superpower?</p>
@@ -62,41 +62,11 @@
                 <div style="border-left:1px solid rgb(114, 114, 114);height:200px; margin-top: 50px;"></div>
 
                 <div class="right">
-                    <button name="submit" type="submit">Previzualizare</button>
                      <button name="adaugaArticol" type="submit">Adauga Articol</button>
                 </div>
             </div>
-<!--            <div class="previzualizareArticol">-->
-<!--                --><?php
-//                if(!empty($_POST['content'])){
-//                    ?>
-<!--                    <div class="output" style="font-size:20px;line-height: 0.9;">-->
-<!--                        <h1>Rezultat</h1>-->
-<!--                        --><?php //echo $_POST['content']; ?>
-<!--                    </div>-->
-<!--                    --><?php
-//                }
-//                ?>
-<!--            </div>-->
-
-
             <div class="row mt-5" style="font-family: 'Lato', sans-serif">
-            <div class="col-8">
-                <div class="titlulDataArticol">
-                    <h1 style="font-family: Rockwell; font-weight: 300; margin-bottom: 0; font-size: 50px"> Acesta este titlul articolului add de me</h1>
-                    <p>11 iun. 2020, 20:32</p>
-                </div>
-
-                <img class="headimg" src="../img/creativity.jpg">
-                <?php
-                if(!empty($_POST['content'])){
-                ?>
-                <div style=""> <?php echo $_POST['content']; ?></div>
-                    <?php
-                }
-                ?>
-            </div>
-   </div> 
+   </div>
    <script src="../ckeditor/ckeditor.js"></script>
    <script>
        CKEDITOR.replace('content');
