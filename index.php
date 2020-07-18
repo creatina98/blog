@@ -23,7 +23,7 @@
             ?>
             <div class="columns col-12">
                 <div class="columns col-8 col-lg-12">
-                    <img class="img" src="./img/<?php echo $item["poza_articol"];?>">
+                    <img class="img" src="./upload/<?php echo $item["poza_articol"];?>">
                     <div class="articolContinut p-absolute">
                         <h1><?php echo mb_strimwidth($item["titlul_articolului"],0,24,"..."); ?></h1>
                         <p><?php echo mb_strimwidth($item["continut_articol"],0,122,"...");?></p>
@@ -43,4 +43,4 @@
 
 <script src="./js/sidebar.js"></script>
 </body>
-</html> 
+</html>

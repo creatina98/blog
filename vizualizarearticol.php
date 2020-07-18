@@ -27,7 +27,7 @@
                 <p><?php echo  $item['data_articol'];?> , <?php echo  $item['ora'];?></p>
                </div>
          
-            <img class="headimg" src="./img/<?php echo $item["poza_articol"];?>">
+            <img class="headimg" src="./upload/<?php echo $item["poza_articol"];?>">
 
             <div><?php echo  $item['continut_articol'];?> </div>
 

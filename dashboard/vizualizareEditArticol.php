@@ -24,9 +24,12 @@
         <?php
         foreach ($array as $item) {
         ?>
-        <input value="<?php echo $item["titlul_articolului"];?>"><br/>
-        <textarea><?php echo $item["continut_articol"];?></textarea>
-        <button>Update Articol</button>
+        <form action="../include/updateArticolDashboard.inc.php" method="post">
+            <input name="idArt" value="<?php echo $item["id_articol"];?>" style="display: none;">
+            <input name="titlulArticolului" value="<?php echo $item["titlul_articolului"];?>"><br/>
+             <textarea name="continutArticol"><?php echo $item["continut_articol"];?></textarea>
+            <button name="update" type="submit">Update</button>
+        </form>
         <?php
         }
         ?>
