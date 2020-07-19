@@ -1,3 +1,8 @@
+<?php
+require './include/login.inc.php'
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,12 +17,12 @@
           <h1>#blog/admin</h1>
       </div>
       <div class="formContinut">
-        <form>
+        <form method="post">
             <label for="fname">Username:</label><br>
-            <input type="text" id="fname" name="fname"><br>
+            <input type="text" id="fname" name="username"><br>
             <label for="lname">Password:</label><br>
-            <input type="password" id="lname" name="lname"><br><br>
-            <button>Log in</button>
+            <input type="password" id="lname" name="password"><br><br>
+            <button type="submit" name="login">Log in</button>
         </form>
       </div>
 </body>

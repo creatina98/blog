@@ -152,6 +152,9 @@ padding: 15px;
   .colst p{
     font-size: 18px;
   }
+  .col-8 ul{
+    font-size: 20px;
+  }
  
 }
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
