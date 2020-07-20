@@ -4,7 +4,7 @@
 <html>
     <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="./img/fav.png"/>
+    <link rel="icon" type="image/png" href="./img/fav3.png"/>
     <link rel="stylesheet" type="text/css" href="./css/style.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="./dist/spectre.css">
     <link rel="stylesheet" href="./dist/spectre-icons.css">

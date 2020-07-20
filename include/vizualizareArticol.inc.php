@@ -38,7 +38,7 @@ if ($resultCheck1 > 0) {
    }else { ?> <style> #titluLista{display: none;} .listaComentarii{display: none}</style> <?php }
 
 $array3 = array();
-$sql3 = "SELECT * FROM articol  order by rand() limit 1 ;";
+$sql3 = "SELECT * FROM citat  order by rand() limit 1 ;";
 $result3 = mysqli_query($conn, $sql3);
 $resultCheck3 = mysqli_num_rows($result3);
 
