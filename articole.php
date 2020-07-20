@@ -24,7 +24,7 @@
             <div class="columns col-6 col-xl-12">
                 <div class="imgart"><a href="vizualizarearticol.php?id_art=<?php echo $item["id_articol"];?>">
                     <div class="box hover<?php echo  $item['id_articol'];?> overlay black">
-                        <img src="./img/<?php echo $item["poza_articol"];?>" width="100%" >
+                        <img src="./upload/<?php echo $item["poza_articol"];?>" width="100%" >
                         <div class="texthover hover1<?php echo  $item['id_articol'];?> p-absolute">
                         <p><?php echo  $item['data_articol'];?></p>
                         </div>
