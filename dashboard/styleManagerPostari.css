@@ -65,7 +65,7 @@ body {
 .boxArticol {
   border: solid 1px black;
   width: 100%;
-  height: 200px;
+  height: 180px;
   margin: 50px;
 }
 .boxContinutArticol {
@@ -108,4 +108,20 @@ body {
   color: white;
   border: 1px solid #01a301;
   margin-top: 20px;
+}
+
+.pagination a{
+  text-decoration: none;
+  background-color: #1f2732;
+  color: white;
+  margin: 1px;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.pagination a:visited{
+  color: white;
+}
+.pagination a:active{
+  color: #17a2b8;
 }
