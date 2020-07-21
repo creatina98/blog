@@ -93,7 +93,8 @@
                         <?php
                         foreach ($array3 as $item3) {
                             ?>
-                            <a style="text-decoration: none;color:#1F2732" href="vizualizarearticol.php?id_art=<?php echo $item3["id_articol"];?>"><p><?php echo  $item3['titlul_articolului'];?></p></a>
+                           <p><?php echo  $item3['continut_citat'];?></p>
+						   <p><?php echo  " by ".$item3['autor_citat'];?></p>
                             <hr>
                         <?php } ?>
                     </div>
