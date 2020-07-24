@@ -39,7 +39,7 @@
                 <hr>
                 <div class="boxAperciereArticol">
                     <h1 class="text-center">Imi place acest articol</h1>
-                    <button id="likeButton" style="font-size:24px"><i class="fa fa-heart fe-pulse-w-pause" style="font-size: 30px;"></i></button>
+                    <button id="likeButton" onclick="myFunction()" style="font-size:24px"><i class="fa fa-heart fe-pulse-w-pause" style="font-size: 30px;"></i></button>
                 </div>
                 <hr>
                 <h2 id="titluLista">Lista comentarii</h2>
@@ -48,18 +48,19 @@
                     <?php
                     foreach ($array2 as $item2) {
                         ?>
-                    <div class="boxImgScrisAutor">
+                    <div style="padding-bottom: unset" class="boxImgScrisAutor">
                         <img src="./img/icon9.png" alt="icon" width="55px" height="58px">
                         <div class="autorCometariu">
-                            <p style="margin-bottom: 0;"><?php echo  $item2['autor_comentariu'];?></p>
-                            <p>11 iun. 2020, 20:32</p>
+                            <p style="margin-bottom: 0;  font-weight:600 ;"><?php echo  $item2['autor_comentariu'];?></p>
+                            <p style="margin-bottom: 0; font-size: smaller">11 iun. 2020, 20:32</p>
                         </div>
                    </div>
 
-                   <p><?php echo  $item2['comentariu'];?></p>
+                   <p style="padding-top: 12px"><?php echo  $item2['comentariu'];?></p>
+
                <?php }  ?>
                 </div>
-                
+
                 <div class="inputAddComentarii">
                     <h2>Lasa un feedback</h2>
                     <form novalidate="" action="include/insertComentariu.inc.php" method="POST">
